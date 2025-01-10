@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/darkbc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.intro {
+    max-width: 600px;
+}
+
+.academic-info {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.resume-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-image: url(images/infobg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+ }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/darkbc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.intro {
+    max-width: 600px;
+}
+
+.academic-info {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.buttons-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.resume-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-image: url(images/infobg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+
+    .profile-img {
+        max-height: 200px;
+    }
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
