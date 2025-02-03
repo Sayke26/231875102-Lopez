@@ -97,12 +97,12 @@
   
   /* Motorshow Section */
   .motorshow {
-    background-image: url(images/BackgroundNGO.jfif); /* Add your motorshow background image */
+    background-image: url(images/Show.jpg); /* Add your motorshow background image */
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 80px 20px;
+    padding: 350px 60px;
   }
   
   .motorshow h2 {
@@ -113,6 +113,19 @@
   .motorshow p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+  }
+  
+  /* Image Section */
+  .image-section {
+    width: 100%;
+    height: 300px; /* You can adjust this height */
+    margin: 50px 0;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will ensure the image covers the area without distorting */
   }
   
   /* Services Section */
