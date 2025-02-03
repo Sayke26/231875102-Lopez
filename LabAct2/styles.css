@@ -1,0 +1,222 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('drag-race-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e5533e;
+  }
+  
+  /* About Section */
+  .about {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .about-content img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  /* Motorshow Section */
+  .motorshow {
+    background-image: url(images/BackgroundNGO.jfif); /* Add your motorshow background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .motorshow h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .motorshow p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Services Section */
+  .services {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e5533e;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
