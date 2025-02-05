@@ -1,235 +1,223 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Body Styling */
-  body {
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  /* Header Section */
-  .header {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-  }
-  
-  .header h1 {
-    font-size: 3rem;
-  }
-  
-  .header p {
-    font-size: 1.2rem;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-image: url('drag-race-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    text-align: center;
-  }
-  
-  .hero-content {
-    max-width: 600px;
-  }
-  
-  .hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    background-color: #ff6347;
-    color: #fff;
-    padding: 15px 25px;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #e5533e;
-  }
-  
-  /* About Section */
-  .about {
-    background: #fff;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .about-content img {
-    width: 50%;
-    border-radius: 10px;
-  }
-  
-  /* Motorshow Section */
-  .motorshow {
-    background-image: url(images/Show.jpg); /* Add your motorshow background image */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 350px 60px;
-  }
-  
-  .motorshow h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .motorshow p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  /* Image Section */
-  .image-section {
-    width: 100%;
-    height: 300px; /* You can adjust this height */
-    margin: 50px 0;
-  }
-  
-  .image-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will ensure the image covers the area without distorting */
-  }
-  
-  /* Services Section */
-  .services {
-    background: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-  
-  .service-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-  }
-  
-  .service-item p {
-    font-size: 1rem;
-  }
-  
-  /* Contact Section */
-  .contact {
-    background: #fff;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  button {
-    background-color: #ff6347;
-    color: #fff;
-    padding: 15px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #e5533e;
-  }
-  
-  /* Footer Section */
-  .footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 1rem;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .services-grid {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 100px; /* Adjust this value to fit your logo */
+  height: auto;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/hehe.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e5533e;
+}
+
+/* Products Section */
+.products {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ff6347;
+  margin-bottom: 15px;
+}
+
+.product-item .cta-button {
+  background-color: #ff6347;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-item .cta-button:hover {
+  background-color: #e5533e;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e5533e;
+}
+
+/* Footer Section */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .products-grid {
       grid-template-columns: 1fr;
-    }
-  
-    .hero h2 {
-      font-size: 2rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
   }
-  
+
+  .hero h2 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+}
