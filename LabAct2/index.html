@@ -23,18 +23,16 @@
         <li><a href="#products">Products</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#cart">Cart (0)</a></li> <!-- Placeholder for Cart -->
+        <li><a href="javascript:void(0);" id="cart">Cart (0)</a></li> <!-- Placeholder for Cart -->
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Upgrade Your Ride with Premium Parts</h2>
-      <p>Discover the best motorcycle parts and accessories for performance and show quality.</p>
-      <a href="#products" class="cta-button">Shop Now</a>
-    </div>
+  <!-- Home Section (New Homepage) -->
+  <section id="home" class="home">
+    <h2>Welcome to RacePh!</h2>
+    <p>Your go-to place for premium motorcycle parts & accessories.</p>
+    <a href="#products" class="cta-button">Shop Now</a>
   </section>
 
   <!-- Products Section -->
@@ -45,83 +43,106 @@
         <img src="images/pipe.jpg" alt="Motorcycle Part 1">
         <h3>DS4 Full Titanium Pipe</h3>
         <p class="price">₱12,999</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="DS4 Full Titanium Pipe" data-price="12999">Add to Cart</a>
       </div>
       <div class="product-item">
         <img src="images/brembo.jpg" alt="Motorcycle Part 2">
         <h3>Brembo Brake Master</h3>
         <p class="price">₱133,669.59</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="Brembo Brake Master" data-price="133669.59">Add to Cart</a>
       </div>
       <div class="product-item">
         <img src="images/cali.jfif" alt="Motorcycle Part 3">
         <h3>Brembo Rossi Caliper</h3>
         <p class="price">₱22,000</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="Brembo Rossi Caliper" data-price="22000">Add to Cart</a>
       </div>
-      <!-- Additional Product Items -->
       <div class="product-item">
         <img src="images/stab.jpg" alt="Motorcycle Part 4">
         <h3>Ohlins Stabilizer</h3>
         <p class="price">₱26,500</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="Ohlins Stabilizer" data-price="26500">Add to Cart</a>
       </div>
       <div class="product-item">
         <img src="images/shock.jfif" alt="Motorcycle Part 5">
         <h3>Ohlins YA069</h3>
         <p class="price">₱59,848</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="Ohlins YA069" data-price="59848">Add to Cart</a>
       </div>
       <div class="product-item">
         <img src="images/cnc.jpg" alt="Motorcycle Part 6">
         <h3>CNC Crankcase</h3>
         <p class="price">₱80,000</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="CNC Crankcase" data-price="80000">Add to Cart</a>
       </div>
       <div class="product-item">
         <img src="images/block.jfif" alt="Motorcycle Part 7">
         <h3>CNC Block</h3>
         <p class="price">₱21,980</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="CNC Block" data-price="21980">Add to Cart</a>
       </div>
       <div class="product-item">
-        <img src="images/chassis.jpg" alt="Motorcycle Part 7">
+        <img src="images/chassis.jpg" alt="Motorcycle Part 8">
         <h3>JRP Alloy Chassis</h3>
         <p class="price">₱38,000</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="JRP Alloy Chassis" data-price="38000">Add to Cart</a>
       </div>
       <div class="product-item">
-        <img src="images/bolts.jpg" alt="Motorcycle Part 7">
+        <img src="images/bolts.jpg" alt="Motorcycle Part 9">
         <h3>CNC Bolts</h3>
         <p class="price">₱900/pc</p>
-        <a href="#cart" class="cta-button">Add to Cart</a>
+        <a href="javascript:void(0);" class="cta-button" data-name="CNC Bolts" data-price="900">Add to Cart</a>
       </div>
     </div>
   </section>
 
+  <!-- Cart Modal (Hidden by Default) -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <button id="closeCart">Close Cart</button>
+    </div>
+  </div>
+
   <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>RacePh is your one-stop shop for motorcycle performance and show-quality parts. We provide premium, durable, and customizable parts for motorcycle enthusiasts across the Philippines.</p>
+    <p>Welcome to RacePh, your one-stop destination for premium motorcycle performance parts and accessories. We specialize in providing top-quality parts for motorcycle enthusiasts to elevate the performance of their bikes. From exhaust pipes to brake systems, we offer a variety of products designed to enhance your riding experience.</p>
+    <p>Our mission is to provide the best motorcycle parts, ensuring that every rider has access to high-performance components. We are committed to delivering outstanding customer service and offering products that meet the highest standards of quality.</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form action="#" method="post">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <p>If you have any questions, comments, or concerns, feel free to reach out to us using the form below or through our contact details.</p>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
       <button type="submit">Send Message</button>
     </form>
+    <p>Or contact us at:</p>
+    <p>Email: <a href="mailto:youremail@example.com">raceph@gmail.com</a></p>
+    <p>Phone: +639973492387</p>
   </section>
 
   <!-- Footer Section -->
   <footer class="footer">
     <p>&copy; 2025 RacePh - Motorcycle Parts & Accessories | All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#about" class="footer-link">About Us</a>
+      <a href="#contact" class="footer-link">Contact</a>
+    </div>
   </footer>
+
+  <!-- External JavaScript File -->
+  <script src="scripts.js"></script>
 </body>
 </html>
