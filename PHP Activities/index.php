@@ -79,20 +79,26 @@ echo "Square of 144: " . square(144) . "<br>";
 ?>
 
 
-<?php  // EXERCISE 5
-echo "<h1>Exercise 5 - Form Handling<br></h1>";
+<h1>Exercise 5 - Form Handling</h1>
+    
+    <form method="POST" action="">
+        <label for="userText">Enter Text:</label>
+        <input type="text" id="userText" name="userText" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <?php
+    // Function to display submitted text
+    function displaySubmittedText($text) {
+        return "You submitted the following text: " . htmlspecialchars($text);
+    }
 
-// Function to display submitted text
-function displaySubmittedText($text) {
-    return "You submitted the following text: " . $text;
-}
-
-// Check if the form is submitted and display the text
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userText = $_POST['userText'];  // Retrieve the text input
-    echo displaySubmittedText($userText);
-}
-?>
+    // Check if the form is submitted and display the text
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $userText = $_POST['userText'];  // Retrieve the text input
+        echo "<p>" . displaySubmittedText($userText) . "</p>";
+    }
+    ?>
 
 </body>
 </html>
